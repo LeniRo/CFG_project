@@ -1,0 +1,144 @@
+body {
+	background-color: #d1edc9;
+font-family: 'Roboto', sans-serif;
+
+font-weight: 75;
+}
+
+html {
+	position: relative;
+    min-height: 100%;
+}
+
+h1 {
+	color: #5f3d7c;
+	text-align: center;
+	font-size: 75pt;
+	padding-top: 10px;
+		font-family: 'Noto Serif', serif;
+}
+h2 {
+	color: #5f3d7c;
+	text-align: center;
+	font-size: 20pt;
+	padding-top: 10px;
+		font-family: 'Noto Serif', serif;
+}
+
+h3 {
+	font-family: 'Noto Serif', serif;
+	font-size: 14pt;
+}
+
+.container {
+ width: 100%;
+ margin: 0 auto;
+
+}
+
+.other-container {
+	 padding-bottom: 0px;
+	 padding-top: 5px;
+}
+
+.textbox {
+	background: #5f3d7c;
+	width: auto;
+	padding: 90px;
+	color: white;
+	font-size: 16pt;
+	text-align: center;
+	-webkit-transition: all 0.1s ease;
+-moz-transition: all 0.1s ease;
+transition: all 0.1s ease;
+}
+
+.text {
+	text-align: center;
+	padding: 90px;
+	font-size: 16pt;
+	color: #cc308b;
+	background: white;
+	width:auto;
+	-webkit-transition: all 0.1s ease;
+-moz-transition: all 0.1s ease;
+transition: all 0.1s ease;
+}
+.imgbox {
+	margin: 0 auto;
+padding-top: 20px;
+}
+.img {
+	width: 200px;
+	height: 200px;
+	padding-top: 5px;
+	-webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+    object-fit: cover;
+}
+.img:hover {
+	-webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+
+.twi-button {
+	padding: 20px;
+	border: 5px grey solid;
+	color: black;
+	font-size: 16pt;
+	margin: 0 auto;
+}
+.twi-button:hover {
+	background: #fcfcfc;
+	color: black;
+}
+p {
+	background-color: #f9f4f8;
+padding: 25px;
+border-radius: 25px;
+	color: black;
+		font-size: 14pt;
+	text-align: left;
+	border-top: 10px solid black;
+	margin-bottom: 70px;
+}
+
+
+a {
+	color: black;
+	text-decoration: none;
+
+}
+a:hover {
+	background: black;
+	text-decoration: none;
+}
+.social {
+	padding: 50px;
+}
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+body { margin: 0; } 
+div#slider { overflow: hidden;  }
+
+div#slider figure img { width: 20%; float: left;}
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 20s slidy infinite; 
+}

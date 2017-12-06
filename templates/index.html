@@ -1,0 +1,116 @@
+<!doctype html>
+<title>SPappProject</title> 
+
+<meta charset=utf-8> 
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylossa.css') }}">
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif|Roboto" rel="stylesheet">
+<script src="https://use.fontawesome.com/e5bf3cfa9c.js"></script>
+
+
+<body>
+<center>
+<img src="http://i68.tinypic.com/148gqir.png" width="100%" >
+</center>
+
+<base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/">
+<figure>
+
+<img src="https://pbs.twimg.com/media/DMccA2CX0AAhxHR.jpg" width="100%" alt>
+
+</figure>
+</div>
+
+<div class="textbox" >
+
+We had no idea on what to expect before joining the Advanced Python course from the Code First Girl community... A bunch of girls with their own motives and their own experience in coding (in our case nonexistent) was turned into coding pros-to-be by a team of awesome people! 
+
+Our input to this course is this web based app that shows the latest twitter activity of the #shefcodefirst. Let's take a look!
+<br>
+<br>
+Brought to you by Eleni & Abi, the Slick Python team :)
+</div>
+
+
+<h2> The #shefcodefirst Advanced Python experience: </h2>
+<br>
+<br>
+<div class="container" >
+<div class="row" >
+{% for tweet in tweets %}
+<div class="col-lg-3 col-sm-3" >
+
+<img src=" {{ tweet.user.profile_image_url }} " class="img-rounded"> <br> <h3>{{ tweet.user.screen_name }}</h3> <br>
+</div>
+<div class="col-lg-8 col-sm-9" >
+<p>{{ tweet.text }}</p>
+</div>
+{% endfor %}
+</div>
+<center>
+<a href="https://twitter.com/search?q=%23shefcodefirst&src=savs" class="twi-button">Read more </a>
+</center>
+</div>
+<br><br>
+
+
+
+<div class="other-container" >
+
+<div class="textbox" >
+Coding is hard, but we couldn't have made it without our talented instructors:<br><br>
+
+<div class="imgbox" >
+<center>
+
+<a href="http://twitter.com/ixek" >
+<img src="https://pbs.twimg.com/profile_images/886594851785060353/IPfEpJ_W_400x400.jpg" class="img"></a>
+<a href="http://https://twitter.com/NinaSwanwick" >
+<img src="https://pbs.twimg.com/profile_images/920389601356853250/PbRBQ59u_400x400.jpg" class="img"></a>
+<a href="http://https://https://twitter.com/cgmcintyr" >
+<img src="https://pbs.twimg.com/profile_images/843117570244952066/P10OYuPB_400x400.jpg" class="img"></a>
+<a href="http://twitter.com/MrDarrenV" >
+<img src="https://pbs.twimg.com/profile_images/885967695874846721/RgI9OGxe_400x400.jpg" class="img"></a></center></div>
+<br>
+<br>
+<center>Tania Allard, Nina Swanwick, Chris McIntyre, Darren Vong</center>
+<br>
+
+<div class="textbox" >
+And our morale would not have been as high without our AWESOME ambassadors that kept us going time after time:<br><br>
+
+<div class="imgbox" >
+<center>
+
+<a href="https://twitter.com/paulienuh" >
+<img src="https://pbs.twimg.com/profile_images/920758024591040512/q1z9XFuD_400x400.jpg" class="img"></a>
+<a href="https://twitter.com/Lakshika_13" >
+<img src="https://pbs.twimg.com/profile_images/849759967594684417/UdvCxyX6_400x400.jpg" class="img"></a></center></div>
+<br>
+<center>Pauline Narvas, Lakshika Juneja</center>
+<br><br>
+
+By now you should all want to nominate each and everyone as  <a href="https://codefirstgirls.typeform.com/to/zVjXUU" >instructor of the month!</a>
+</div>
+
+
+
+
+<div class="textbox" >
+
+	It was great being part of an -almost- all-girls team, dipping our toes in an -almost- all men area! 
+	Thank you!  
+<br>
+<h2> More #shefcodefirst: </h2>
+<br>
+<a href="https://twitter.com/search?q=%23shefcodefirst&src=savshttps://www.facebook.com/search/top/?q=%23shefcodefirst"><i class="fa fa-twitter social fa-2x" aria-hidden="true"></i></a> <a href="https://www.instagram.com/explore/tags/shefcodefirst/"> <i class="fa fa-instagram fa-2x social" aria-hidden="true"></i></a>
+<a href="https://www.linkedin.com/search/results/content/?keywords=%23shefcodefirst&origin=SWITCH_SEARCH_VERTICAL" >
+<i class="fa fa-linkedin fa-2x social" aria-hidden="true"></i></a>
+<a href="https://www.facebook.com/search/top/?q=%23shefcodefirst"><i class="fa fa-facebook-square fa-2x social" aria-hidden="true"></i></a>
+</div>
+</div>
+</body>
+</html>
